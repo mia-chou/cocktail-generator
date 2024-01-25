@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Cocktail Generator</title>
 </head>
@@ -18,23 +19,22 @@
     <input type="text" 
     placeholder="Enter an ingredient for recipe inspiration..."
     autofocus="on"
-    required
-    class="instruction"
-    id="search-input"
+          required
+          class="instruction"
+          id="search-input"
   />
   <input type="submit" value="Search" class="button" id="button" />
 </form>
 <div class="hint">E.g Lemon </div>
 <div class="recipe hidden" id="recipe"></div>
 </main>
+<script src="src/script.js"></script> 
     <footer>
 This AI project was coded by <a href="https://github.com/mia-chou"target="_blank"><strong>Fang-Yi Chou</strong></a> is <a href="https://github.com/mia-chou/cocktail-generator" target="_blank">open-sourced on GitHub</a>
 and is
           <a href="https://cocktail-generator-project.netlify.app/" target="_blank"
             > hosted on Netlify</a>
-
     </footer>
 </div>
-  <script src="src/script.js"></script>  
 </body>
 </html>
