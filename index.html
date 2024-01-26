@@ -11,22 +11,24 @@
 <body>
     <div class="container">
     <header>
-    <h1>AI Cocktail Recipe Generator</h1>
+    <h1>AI Cocktail Recipe Generator🏖️</h1>
 </header>
 
 <main>
+    <div class="container">
 <form id="recipe-generator">
     <input type="text" 
     placeholder="Enter an ingredient for recipe inspiration..."
     autofocus="on"
           required
           class="instruction"
-          id="search-input"
+          id="user-instructions"
   />
   <input type="submit" value="Search" class="button" id="button" />
 </form>
-<div class="hint">E.g Lemon </div>
+<div class="hint">E.g: orange, gin, rhubarb</div>
 <div class="recipe hidden" id="recipe"></div>
+    </div>
 </main>
 <script src="src/script.js"></script> 
     <footer>
