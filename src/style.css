@@ -1,12 +1,15 @@
 body{
-    background: #E1F6E3;
+    background-image:url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/507/original/5563101.jpg?1706411299") ;
+    background-size: cover; /* Adjust the size property as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
     font-family: Helvetica, Arial, sans-serif;
 
 }
 
 
 a {
-    color:  #558B6E;
+    color:  #7B5747;
   }
 
 
@@ -23,9 +26,15 @@ h1{
     font-weight: 800;
     font-size: 32px;
     line-height: 1.5;
-    color: #558B6E;
 
-}
+  }
+
+  .gradient-text {
+    background: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
 
 header{
     margin-bottom: 30px;
@@ -63,7 +72,7 @@ form {
   .button {
     margin-left: 10px;
     width: 150px;
-    background:rgb(159, 216, 185);  
+    background:#ffc93c;  
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
@@ -77,9 +86,15 @@ form {
   background-color: #fff;
   padding: 20px;
   line-height: 2;
-  border-left: 3px solid  rgb(159, 216, 185);
+  border-left: 3px solid  rgb(255, 226, 159);
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
+
+
+hidden {
+    display: none;
+  }
+  
 
 .recipe strong {
     color: #885df1;
@@ -96,4 +111,19 @@ footer {
     padding: 5px;
     margin-left: 14px;
     font-size: 14px;
+  }
+
+  .generating {
+    animation: blink-animation 1s steps(10, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
   }

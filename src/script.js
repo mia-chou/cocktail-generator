@@ -15,7 +15,7 @@ function displayRecipe(response) {
     let instructionsInput = document.querySelector("#user-instructions");
     let apiKey = "03ob1b49a93e50d82f3dta0c9ad62afc";
     let context =
-      "You are a highly skilled AI Bartender that knows a range of different cocktail recipes from just one ingredient. Your mission is to generate a 6-line recipe in basic HTML and separate each line with a <br />. Make sure to follow the user instructions. Please use UK imperial measurements such as: grams. Do not include a title to the recipe.";
+      "You are a highly skilled AI Bartender that knows a range of different cocktail recipes from just one ingredient. Your mission is to generate a 6-line recipe in basic HTML and separate each line with a <br />. Make sure to follow the user instructions. Please use UK imperial measurements such as: grams. Do not include a title to the recipe. Do not use difficult words.";
   
     let prompt = `User instructions: Generate a cocktail recipe about ${instructionsInput.value}`;
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
@@ -26,5 +26,7 @@ function displayRecipe(response) {
   
     axios.get(apiURL).then(displayRecipe);
   }
+  
   let recipeFormElement = document.querySelector("#recipe-generator");
   recipeFormElement.addEventListener("submit", generateRecipe);
+  
